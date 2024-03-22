@@ -1,0 +1,105 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --figtree: "Figtree", sans-serif;
+    --paraSize: 1rem;
+}
+
+/* Top Level style to help with centering content */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sytle body with Flexbox */
+body {
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style the wrapper */
+.wrapper {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 315px;
+    padding: 1rem;
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: .5rem;
+    font-family: var(--figtree);
+    box-shadow: 6px 6px 1px black;
+    margin-bottom: 1rem;
+}
+
+/* Style all Content Items */
+#cardImg {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+button {
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 7%);
+    background-color: var(--yellow);
+    border: none;
+    padding: 0.25rem 0.45rem;
+    border-radius: 0.4rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.pubDate {
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin: 0.75rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.cardText {
+    color: hsl(0, 0%, 50%);
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 1rem 0;
+}
+
+.userBox {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.profileImg {
+    width: 2rem;
+    height: 2rem;
+}
+
+span {
+    font-weight: 800;
+    font-size: 0.65rem;
+    margin-left: .5rem;
+}
+
+
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
